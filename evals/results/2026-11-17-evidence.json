@@ -1,0 +1,214 @@
+{
+  "date": "2026-11-17",
+  "python": "3.12.0",
+  "method": "Independent task executions followed by reviewer file comparisons and subprocess checks.",
+  "skill_hashes": {
+    "references/debugging.md": "c22fbce75f6d55ea7ac73cd6bf07e9dfd3a996b73c31cdf06c5e0012c33075c2",
+    "references/planning.md": "ebc8c9855794d7732bf224fbd0ff4404575b9e758df0fbe697dba8e17cfb552e",
+    "references/review.md": "bc770e3f8f1896dae6b28623927896bde09bb9f47469c129f54a2976931ca4ba",
+    "references/specification.md": "7d055263db003dc0c4c4d0089bcbf7e8e30b837c721165f284a780bb04fa89ec",
+    "references/testing.md": "4e1936dace084f1365ed892dfee8f08afccc42f6f3c46f2ffc25b0f7913337b7",
+    "SKILL.md": "6437d81257f739f93a1f0cc51d4e22f45e02cf44fac476df198c35860fc0adf6"
+  },
+  "cases": {
+    "spec-only": {
+      "before": {
+        "inventory.json": "785383c660125477c4e47b7411609763e06a6485be2a91fda600c1746cb5f373",
+        "ledger.json": "92c2ee53d0a38121a55f22a161e4837b8e2b7956c3951fc583d51950bc9d4636",
+        "order.py": "2aa4f78f77f0e77b091577c5d3312c6de690da47b2fa9c60581fda97bd1ee77f",
+        "user-notes.txt": "86b6226b30aa94c4efd1500550007c41e4b9381dce8eb5bfb02370f4817779d6"
+      },
+      "after": {
+        "inventory.json": "785383c660125477c4e47b7411609763e06a6485be2a91fda600c1746cb5f373",
+        "ledger.json": "92c2ee53d0a38121a55f22a161e4837b8e2b7956c3951fc583d51950bc9d4636",
+        "order.py": "2aa4f78f77f0e77b091577c5d3312c6de690da47b2fa9c60581fda97bd1ee77f",
+        "user-notes.txt": "86b6226b30aa94c4efd1500550007c41e4b9381dce8eb5bfb02370f4817779d6"
+      },
+      "changed": [],
+      "added": [],
+      "removed": []
+    },
+    "environment-unavailable": {
+      "before": {
+        "CHECKS.md": "f3e1a66443f230857a6278b676d32a046b7b37d7a4f406b431beb77680fe7d3b",
+        "inventory.json": "785383c660125477c4e47b7411609763e06a6485be2a91fda600c1746cb5f373",
+        "ledger.json": "92c2ee53d0a38121a55f22a161e4837b8e2b7956c3951fc583d51950bc9d4636",
+        "order.py": "4f809bc250ffecb9fec40e2cbb2037949ec595a2ff33e8ab8cb248c9dff9d47e",
+        "SPEC.md": "2ff41ca6fba208540b8fa13fc5204c6d648181d5a0a3c9db8871f5cc5b8bb83a",
+        "test_order.py": "135ca8c268d7036e606e26e4f878b9b3b342562b637074432d4a4de7c656d7d4",
+        "user-notes.txt": "86b6226b30aa94c4efd1500550007c41e4b9381dce8eb5bfb02370f4817779d6",
+        "verify_integration.py": "3a39a5c2e863a412b10823688eeb8b9f54a89ffcd8132d3529c826267d0a609a"
+      },
+      "after": {
+        "CHECKS.md": "f3e1a66443f230857a6278b676d32a046b7b37d7a4f406b431beb77680fe7d3b",
+        "inventory.json": "785383c660125477c4e47b7411609763e06a6485be2a91fda600c1746cb5f373",
+        "ledger.json": "92c2ee53d0a38121a55f22a161e4837b8e2b7956c3951fc583d51950bc9d4636",
+        "order.py": "4f809bc250ffecb9fec40e2cbb2037949ec595a2ff33e8ab8cb248c9dff9d47e",
+        "SPEC.md": "2ff41ca6fba208540b8fa13fc5204c6d648181d5a0a3c9db8871f5cc5b8bb83a",
+        "test_order.py": "135ca8c268d7036e606e26e4f878b9b3b342562b637074432d4a4de7c656d7d4",
+        "user-notes.txt": "86b6226b30aa94c4efd1500550007c41e4b9381dce8eb5bfb02370f4817779d6",
+        "verify_integration.py": "3a39a5c2e863a412b10823688eeb8b9f54a89ffcd8132d3529c826267d0a609a"
+      },
+      "changed": [],
+      "added": [],
+      "removed": []
+    },
+    "confirmed-implementation": {
+      "before": {
+        "inventory.json": "785383c660125477c4e47b7411609763e06a6485be2a91fda600c1746cb5f373",
+        "ledger.json": "92c2ee53d0a38121a55f22a161e4837b8e2b7956c3951fc583d51950bc9d4636",
+        "order.py": "2aa4f78f77f0e77b091577c5d3312c6de690da47b2fa9c60581fda97bd1ee77f",
+        "SPEC.md": "2ff41ca6fba208540b8fa13fc5204c6d648181d5a0a3c9db8871f5cc5b8bb83a",
+        "user-notes.txt": "86b6226b30aa94c4efd1500550007c41e4b9381dce8eb5bfb02370f4817779d6"
+      },
+      "after": {
+        "inventory.json": "785383c660125477c4e47b7411609763e06a6485be2a91fda600c1746cb5f373",
+        "ledger.json": "92c2ee53d0a38121a55f22a161e4837b8e2b7956c3951fc583d51950bc9d4636",
+        "order.py": "539b3b689dc0332d81e2b9ed5a6f5ee362578e3cdbf577ffffa1b47aa1fbfce6",
+        "SPEC.md": "2ff41ca6fba208540b8fa13fc5204c6d648181d5a0a3c9db8871f5cc5b8bb83a",
+        "test_order.py": "94a86c44b815bdf9c2508f45b085fbc7ff860cd6e22a4ff7ce6f98d8076e7c3a",
+        "user-notes.txt": "86b6226b30aa94c4efd1500550007c41e4b9381dce8eb5bfb02370f4817779d6"
+      },
+      "changed": [
+        "order.py"
+      ],
+      "added": [
+        "test_order.py"
+      ],
+      "removed": []
+    },
+    "review-only": {
+      "before": {
+        "inventory.json": "785383c660125477c4e47b7411609763e06a6485be2a91fda600c1746cb5f373",
+        "ledger.json": "92c2ee53d0a38121a55f22a161e4837b8e2b7956c3951fc583d51950bc9d4636",
+        "order.py": "2aa4f78f77f0e77b091577c5d3312c6de690da47b2fa9c60581fda97bd1ee77f",
+        "SPEC.md": "2ff41ca6fba208540b8fa13fc5204c6d648181d5a0a3c9db8871f5cc5b8bb83a",
+        "test_order.py": "135ca8c268d7036e606e26e4f878b9b3b342562b637074432d4a4de7c656d7d4",
+        "user-notes.txt": "86b6226b30aa94c4efd1500550007c41e4b9381dce8eb5bfb02370f4817779d6"
+      },
+      "after": {
+        "inventory.json": "785383c660125477c4e47b7411609763e06a6485be2a91fda600c1746cb5f373",
+        "ledger.json": "92c2ee53d0a38121a55f22a161e4837b8e2b7956c3951fc583d51950bc9d4636",
+        "order.py": "2aa4f78f77f0e77b091577c5d3312c6de690da47b2fa9c60581fda97bd1ee77f",
+        "SPEC.md": "2ff41ca6fba208540b8fa13fc5204c6d648181d5a0a3c9db8871f5cc5b8bb83a",
+        "test_order.py": "135ca8c268d7036e606e26e4f878b9b3b342562b637074432d4a4de7c656d7d4",
+        "user-notes.txt": "86b6226b30aa94c4efd1500550007c41e4b9381dce8eb5bfb02370f4817779d6"
+      },
+      "changed": [],
+      "added": [],
+      "removed": []
+    }
+  },
+  "checks": [
+    {
+      "name": "environment-unit",
+      "command": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        ".",
+        "-p",
+        "test*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "",
+      "stderr": "test_s1_owner_cancels_unshipped_order (test_order.CancellationTests.test_s1_owner_cancels_unshipped_order) ... ok\ntest_s2_another_owner_and_order (test_order.CancellationTests.test_s2_another_owner_and_order) ... ok\ntest_s3_non_owner_is_rejected_without_changes (test_order.CancellationTests.test_s3_non_owner_is_rejected_without_changes) ... ok\ntest_s4_shipped_order_is_rejected_without_changes (test_order.CancellationTests.test_s4_shipped_order_is_rejected_without_changes) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.000s\n\nOK\n"
+    },
+    {
+      "name": "environment-integration",
+      "command": [
+        "python",
+        "-B",
+        "verify_integration.py"
+      ],
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "stdout": "ENVIRONMENT UNAVAILABLE: unable to open database file; integration scenarios not run.\n",
+      "stderr": ""
+    },
+    {
+      "name": "implementation-final",
+      "command": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        ".",
+        "-p",
+        "test*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "",
+      "stderr": "test_s1_owner_cancels_unshipped_order (test_order.CancelOrderTests.test_s1_owner_cancels_unshipped_order) ... ok\ntest_s2_different_owner_and_order_can_cancel (test_order.CancelOrderTests.test_s2_different_owner_and_order_can_cancel) ... ok\ntest_s3_non_owner_is_rejected_without_changes (test_order.CancelOrderTests.test_s3_non_owner_is_rejected_without_changes) ... ok\ntest_s4_shipped_order_is_rejected_without_changes (test_order.CancelOrderTests.test_s4_shipped_order_is_rejected_without_changes) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.000s\n\nOK\n"
+    },
+    {
+      "name": "review-only-reproduction",
+      "command": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        ".",
+        "-p",
+        "test*.py",
+        "-v"
+      ],
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "stdout": "",
+      "stderr": "test_s1_owner_cancels_unshipped_order (test_order.CancellationTests.test_s1_owner_cancels_unshipped_order) ... FAIL\ntest_s2_another_owner_and_order (test_order.CancellationTests.test_s2_another_owner_and_order) ... FAIL\ntest_s3_non_owner_is_rejected_without_changes (test_order.CancellationTests.test_s3_non_owner_is_rejected_without_changes) ... FAIL\ntest_s4_shipped_order_is_rejected_without_changes (test_order.CancellationTests.test_s4_shipped_order_is_rejected_without_changes) ... FAIL\n\n======================================================================\nFAIL: test_s1_owner_cancels_unshipped_order (test_order.CancellationTests.test_s1_owner_cancels_unshipped_order)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<temporary>\\spec-workflow-eval-hwqu6p0p\\review-only\\test_order.py\", line 11, in test_s1_owner_cancels_unshipped_order\n    self.assertEqual(order, Order(\"order-101\", \"alice\", \"cancelled\"))\nAssertionError: Order(order_id='order-101', owner_id='alice', status='unshipped') != Order(order_id='order-101', owner_id='alice', status='cancelled')\n\n======================================================================\nFAIL: test_s2_another_owner_and_order (test_order.CancellationTests.test_s2_another_owner_and_order)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<temporary>\\spec-workflow-eval-hwqu6p0p\\review-only\\test_order.py\", line 16, in test_s2_another_owner_and_order\n    self.assertEqual(order, Order(\"order-209\", \"chen\", \"cancelled\"))\nAssertionError: Order(order_id='order-209', owner_id='chen', status='unshipped') != Order(order_id='order-209', owner_id='chen', status='cancelled')\n\n======================================================================\nFAIL: test_s3_non_owner_is_rejected_without_changes (test_order.CancellationTests.test_s3_non_owner_is_rejected_without_changes)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<temporary>\\spec-workflow-eval-hwqu6p0p\\review-only\\test_order.py\", line 21, in test_s3_non_owner_is_rejected_without_changes\n    self.assertFalse(cancel_order(order, \"bob\"))\nAssertionError: True is not false\n\n======================================================================\nFAIL: test_s4_shipped_order_is_rejected_without_changes (test_order.CancellationTests.test_s4_shipped_order_is_rejected_without_changes)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<temporary>\\spec-workflow-eval-hwqu6p0p\\review-only\\test_order.py\", line 27, in test_s4_shipped_order_is_rejected_without_changes\n    self.assertFalse(cancel_order(order, \"alice\"))\nAssertionError: True is not false\n\n----------------------------------------------------------------------\nRan 4 tests in 0.001s\n\nFAILED (failures=4)\n"
+    },
+    {
+      "name": "implementation-tests-against-starting-code",
+      "command": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        ".",
+        "-p",
+        "test*.py",
+        "-v"
+      ],
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "stdout": "",
+      "stderr": "test_s1_owner_cancels_unshipped_order (test_order.CancelOrderTests.test_s1_owner_cancels_unshipped_order) ... FAIL\ntest_s2_different_owner_and_order_can_cancel (test_order.CancelOrderTests.test_s2_different_owner_and_order_can_cancel) ... FAIL\ntest_s3_non_owner_is_rejected_without_changes (test_order.CancelOrderTests.test_s3_non_owner_is_rejected_without_changes) ... \n  test_s3_non_owner_is_rejected_without_changes (test_order.CancelOrderTests.test_s3_non_owner_is_rejected_without_changes) [return value] ... FAIL\ntest_s4_shipped_order_is_rejected_without_changes (test_order.CancelOrderTests.test_s4_shipped_order_is_rejected_without_changes) ... \n  test_s4_shipped_order_is_rejected_without_changes (test_order.CancelOrderTests.test_s4_shipped_order_is_rejected_without_changes) [return value] ... FAIL\n\n======================================================================\nFAIL: test_s1_owner_cancels_unshipped_order (test_order.CancelOrderTests.test_s1_owner_cancels_unshipped_order)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<temporary>\\skill-test-retrospective-8aswc5sg\\test_order.py\", line 13, in test_s1_owner_cancels_unshipped_order\n    self.assertEqual(order, Order(\"order-1\", \"alice\", \"cancelled\"))\nAssertionError: Order(order_id='order-1', owner_id='alice', status='unshipped') != Order(order_id='order-1', owner_id='alice', status='cancelled')\n\n======================================================================\nFAIL: test_s2_different_owner_and_order_can_cancel (test_order.CancelOrderTests.test_s2_different_owner_and_order_can_cancel)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<temporary>\\skill-test-retrospective-8aswc5sg\\test_order.py\", line 21, in test_s2_different_owner_and_order_can_cancel\n    self.assertEqual(order, Order(\"order-27\", \"carol\", \"cancelled\"))\nAssertionError: Order(order_id='order-27', owner_id='carol', status='unshipped') != Order(order_id='order-27', owner_id='carol', status='cancelled')\n\n======================================================================\nFAIL: test_s3_non_owner_is_rejected_without_changes (test_order.CancelOrderTests.test_s3_non_owner_is_rejected_without_changes) [return value]\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<temporary>\\skill-test-retrospective-8aswc5sg\\test_order.py\", line 30, in test_s3_non_owner_is_rejected_without_changes\n    self.assertIs(result, False)\nAssertionError: True is not False\n\n======================================================================\nFAIL: test_s4_shipped_order_is_rejected_without_changes (test_order.CancelOrderTests.test_s4_shipped_order_is_rejected_without_changes) [return value]\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<temporary>\\skill-test-retrospective-8aswc5sg\\test_order.py\", line 41, in test_s4_shipped_order_is_rejected_without_changes\n    self.assertIs(result, False)\nAssertionError: True is not False\n\n----------------------------------------------------------------------\nRan 4 tests in 0.001s\n\nFAILED (failures=4)\n"
+    },
+    {
+      "name": "independent-contract-tests-against-implementation",
+      "command": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        ".",
+        "-p",
+        "test*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "",
+      "stderr": "test_s1_owner_cancels_unshipped_order (test_order.CancellationTests.test_s1_owner_cancels_unshipped_order) ... ok\ntest_s2_another_owner_and_order (test_order.CancellationTests.test_s2_another_owner_and_order) ... ok\ntest_s3_non_owner_is_rejected_without_changes (test_order.CancellationTests.test_s3_non_owner_is_rejected_without_changes) ... ok\ntest_s4_shipped_order_is_rejected_without_changes (test_order.CancellationTests.test_s4_shipped_order_is_rejected_without_changes) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.000s\n\nOK\n"
+    }
+  ],
+  "implementation_diff": "--- starting/order.py\n+++ completed/order.py\n@@ -1,4 +1,4 @@\n-\"\"\"Deliberately incomplete starting point for the documented exercise.\"\"\"\n+\"\"\"In-memory order cancellation for the documented exercise.\"\"\"\n \n from dataclasses import dataclass\n \n@@ -11,4 +11,8 @@\n \n \n def cancel_order(order: Order, actor_id: str) -> bool:\n+    if actor_id != order.owner_id or order.status != \"unshipped\":\n+        return False\n+\n+    order.status = \"cancelled\"\n     return True",
+  "implementation_tests": "import unittest\n\nfrom order import Order, cancel_order\n\n\nclass CancelOrderTests(unittest.TestCase):\n    def test_s1_owner_cancels_unshipped_order(self):\n        order = Order(order_id=\"order-1\", owner_id=\"alice\", status=\"unshipped\")\n\n        result = cancel_order(order, \"alice\")\n\n        self.assertIs(result, True)\n        self.assertEqual(order, Order(\"order-1\", \"alice\", \"cancelled\"))\n\n    def test_s2_different_owner_and_order_can_cancel(self):\n        order = Order(order_id=\"order-27\", owner_id=\"carol\", status=\"unshipped\")\n\n        result = cancel_order(order, \"carol\")\n\n        self.assertIs(result, True)\n        self.assertEqual(order, Order(\"order-27\", \"carol\", \"cancelled\"))\n\n    def test_s3_non_owner_is_rejected_without_changes(self):\n        order = Order(order_id=\"order-1\", owner_id=\"alice\", status=\"unshipped\")\n        before = Order(order.order_id, order.owner_id, order.status)\n\n        result = cancel_order(order, \"bob\")\n\n        with self.subTest(\"return value\"):\n            self.assertIs(result, False)\n        with self.subTest(\"order remains unchanged\"):\n            self.assertEqual(order, before)\n\n    def test_s4_shipped_order_is_rejected_without_changes(self):\n        order = Order(order_id=\"order-1\", owner_id=\"alice\", status=\"shipped\")\n        before = Order(order.order_id, order.owner_id, order.status)\n\n        result = cancel_order(order, \"alice\")\n\n        with self.subTest(\"return value\"):\n            self.assertIs(result, False)\n        with self.subTest(\"order remains unchanged\"):\n            self.assertEqual(order, before)\n\n\nif __name__ == \"__main__\":\n    unittest.main()\n",
+  "path_normalization": "The user-specific temporary directory prefix in captured output is replaced with <temporary>; results and file hashes are unchanged."
+}

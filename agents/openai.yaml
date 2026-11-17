@@ -1,0 +1,4 @@
+interface:
+  display_name: "规格到验证交付"
+  short_description: "从需求澄清、规格与场景到测试驱动实现、根因排查、评审和验证交付"
+  default_prompt: "使用 $spec-to-tested-code，根据任务选择澄清、规格、验收、计划、实现或排障阶段，以实际验证证据完成已授权的工作。"

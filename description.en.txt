@@ -1,0 +1,1 @@
+An agent skill that connects specifications, behavior scenarios, and test-driven implementation, with planning, debugging, review, and evidence-based delivery.
